@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Noman's Portfolio</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Mohd Noman's portfolio showcasing his skills in computer applications and design, including Photoshop, CorelDraw, PageMaker, and more.">
+    <meta name="keywords" content="Mohd Noman, Portfolio, Computer Application, Web Development, Photoshop, CorelDraw, PageMaker, MS Word, HTML, CSS, Tally, Digital Design">
+    <meta name="author" content="Mohd Noman">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags for social media sharing -->
+    <meta property="og:title" content="Mohd Noman's Portfolio">
+    <meta property="og:description" content="Explore Mohd Noman's portfolio with his skills in computer applications, design, and web development.">
+    <meta property="og:image" content="https://i.ibb.co/4tW1F9f/20241028-212404-1.jpg">
+    <meta property="og:url" content="https://mohdnoman.tiiny.site">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:title" content="Mohd Noman's Portfolio">
+    <meta name="twitter:description" content="Explore Mohd Noman's portfolio showcasing his skills in Photoshop, CorelDraw, PageMaker, HTML, CSS, and more.">
+    <meta name="twitter:image" content="https://i.ibb.co/4tW1F9f/20241028-212404-1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="rBAWDJIBNmOJrEfuE7qU9KM2rfFsaqZ6sgQ7zsrgoDI" />
+    <title>Mohd Noman's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+      
+        }
+
+        header {
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #1cc88a;
+        }
+
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #1cc88a;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 60px 20px;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            text-align: left;
+        }
+
+        .about-content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for the Skills Section */
+#skills {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#skills h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.skillset {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.skill {
+   //  background-color: #fff;
+    padding: 20px;
+    // border-radius: 12px;
+    // box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skill h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Hover Effects */
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skill:hover img {
+    transform: scale(1.1);
+}
+
+.skill a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #skills h2 {
+        font-size: 2rem;
+    }
+
+    .skillset {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    .skill img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .skill h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skillset {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill h3 {
+        font-size: 0.95rem;
+    }
+}
+
+        #contact {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.form-group input, .form-group textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #4e73df;
+    background-color: #fff;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #4e73df;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+button[type="submit"]:hover {
+    background-color: #2e59d9;
+    transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+    transform: scale(1);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #contact {
+        padding: 30px;
+        margin: 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+    }
+}
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4e73df;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .skillset {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mohd Noman</h1>
+        <p>Advanced Diploma in Computer Application</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="https://i.ibb.co/4tW1F9f/20241028-212404-1.jpg" alt="Mohd Noman's Professional Picture" />
+            <div>
+                <p>Hello! I am Mohd Noman from Sai Buzurg, Sant Kabir Nagar, Uttar Pradesh. I have a strong background in computer applications and design, and I am passionate about creating impactful digital experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skillset">
+            <div class="skill">
+                <a href="https://www.adobe.com/products/photoshop.html" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrIsiTl916fgnxTVNQaIiFBNVPn5Er55m2wA&s" alt="Photoshop" />
+                </a>
+                <h3>Photoshop</h3>
+            </div>
+            <div class="skill">
+                <a href="https://www.coreldraw.com/en/" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiyEmDXr-CkdDZ0o58braaCEjs7OwYMYTp9g&s" alt="CorelDraw" />
+                </a>
+                <h3>CorelDraw</h3>
+            </div>
+            <div class="skill">
+                <a href="https://www.adobe.com/products/pagemaker.html" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Adobe_PageMaker_v9.0_icon.png" alt="PageMaker" />
+                </a>
+                <h3>PageMaker</h3>
+            </div>
+            <div class="skill">
+                <a href="https://www.microsoft.com/en-us/microsoft-365/word" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnhAaQ9ABS5dhP1lPYQWzTKFxIoMj9FB2cdw&s" alt="MS Word" />
+                </a>
+                <h3>MS Word</h3>
+            </div>
+            <div class="skill">
+                <a href="https://tallysolutions.com/" target="_blank">
+                    <img src="https://logodix.com/logo/699715.jpg" alt="Tally" />
+                </a>
+                <h3>Tally</h3>
+            </div>
+            <div class="skill">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="HTML" />
+                </a>
+                <h3>HTML</h3>
+            </div>
+            <div class="skill">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS" />
+                </a>
+                <h3>CSS</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="https://formspree.io/f/mrbgabgb" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Mohd Noman. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
